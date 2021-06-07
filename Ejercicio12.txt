@@ -1,0 +1,41 @@
+Proceso Ejercicio_12
+	h<-5
+	i<-1
+	sm<-0
+	sh<-0
+	se<-0
+	cm<-0
+	ch<-0
+	Escribir 'Ingresar la informacion de los participantes'
+	Mientras h>0 Hacer
+		Escribir 'Ingrese altura del participante ',i
+		Leer h
+		Escribir 'Ingrese la edad del participante ',i
+		Leer e
+		Escribir 'Ingrese el sexo del participante ',i
+		Leer s
+		Si s=='femenino' Entonces
+			Si h>0 Entonces
+				sm<-sm+h
+				cm<-cm+1
+			FinSi
+		FinSi
+		Si s=='masculino' Entonces
+			Si h>=0 Entonces
+				sh<-sh+h
+				ch<-ch+1
+			FinSi
+		FinSi
+		Si h>=0 Entonces
+			i<-i+1
+			se<-se+e
+		FinSi
+	FinMientras
+	pHm<-sm/cm
+	pHh<-sh/ch
+	pEp<-se/i
+	Escribir 'Promedio de altura de las mujeres: ',pHm
+	Escribir 'Promedio de altura de las hombres: ',pHh
+	Escribir 'Promedio de edad: ',pEp
+FinProceso
+
